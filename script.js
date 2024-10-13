@@ -64,7 +64,11 @@ window.onscroll = () => {
 const animate = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
-    delay: 400,
-})
-animate.reveal('.navbar')
+    duration: '2500',
+    delay: '400',
+});
+animate.reveal('.nav');
+animate.reveal('.home-text', { origin: 'left'});
+animate.reveal('.social-media', { origin: 'left'});
+animate.reveal('.home-img', { origin: 'bottom'});
+animate.reveal('.about-box, .products-box, .category-box, .contact__data, .contact__mail', { interval: 100});
