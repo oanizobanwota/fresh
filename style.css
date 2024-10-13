@@ -213,6 +213,10 @@ color: var(--main-color);
   color: var(--main-color);
  
 }
+.social-media i:hover {
+  color: var(--second-color);
+ 
+}
 .social-media a {
   margin: 0 0.5rem;
 }
@@ -703,6 +707,7 @@ background: #fff;
  /* contact */
 
 .footer {
+  width: 70%;
   display: flex;
   grid-template-columns: repeat(4, auto);
   justify-content: space-between;
@@ -711,6 +716,7 @@ background: #fff;
 
 }
 .footer .logo {
+  font-size: 1.2rem;
   color: var(--main-color);
   margin-bottom: 1rem;
 }
@@ -719,12 +725,12 @@ background: #fff;
   align-items: center;
   margin-top: 1rem;
 }
-.social a {
+.social i {
   font-size: 24px;
   color: var(--main-color);
   margin-right: 1rem;
 }
-.social a:hover {
+.social i:hover {
   color: var(--second-color);
 }
 .footer-box {
@@ -747,6 +753,16 @@ background: #fff;
   color: var(--main-color);
   text-align: center;
   margin-top: 2rem;
+}
+.arrow-up .bx {
+  font-size: 20px;
+  color: var(--bg-color);
+  background: var(--second-color);
+  padding: 5px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
 }
 
 @media (max-width: 1080px){
