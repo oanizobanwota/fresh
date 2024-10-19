@@ -5,42 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshBITE Cafe</title>
+    <!-- link to font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- custom css file link -->
-    <link rel="stylesheet" href="style.css">
-    <!-- link to box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <!-- header section starts -->
-    <header>
-            <div class="nav container">
-    <!-- logo -->
-                        <a href="#" class="logo"><i class='bx bx-coffee' ></i>FreshBITE</a>
-<!--Navbar-->
-                    <div class="navbar">
-                    
-                            <a href="#home" class="nav-link">home</a>
-                            <a href="#about" class="nav-link">about</a>
-                            <a href="#category" class="nav-link">category</a>
-                            <a href="#products" class="nav-link">products</a>
-                            <a href="#contact" class="nav-link">contact</a>
-                       
-                    </div>
-<!-- nav icon -->
- <div class="nav-icons">
-  
-    <!--Menu Icon-->
-    <div class="menu-icon">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
+    <header class="header">
 
- </div>
-            </div>
-    </header>
-    <!-- header section ends -->
+      <!-- logo -->
+                          <a href="#" class="logo"><i class='fas fa-mug-hot' ></i>FreshBITE</a>
+  <!--Navbar-->
+                      <nav class="navbar">
+                      
+                              <a href="../index.html" class="nav-link">home</a>
+                              <a href="about.html" class="nav-link">about</a>
+                              <a href="categories.html" class="nav-link">category</a>
+                              <a href="products.html" class="nav-link">products</a>
+                              <a href="contact.html" class="nav-link">contact</a>
+                         
+                      </nav>
+  <!-- nav icon -->
+   <div class="icons">
+          <div class="fas fa-bars" id="menu-btn"></div>
+          <div class="fas fa-search" id="search-btn"></div>
+  </div>
+  <form action="" class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label class="fas fa-search"></label>
+  </form>
+  </header>
+  
+      <!-- header section ends -->
+
 <!-- home section starts -->
  <section class="home container" id="home">
         <div class="home-text">
@@ -321,38 +319,52 @@
 -->
   <!-- contact -->
 <!-- footer section starts -->
- <section class="footer container" id="footer">
-    <div class="footer-box">
-        <a href="#" class="logo">FreshBITE</a>
-        <div class="social">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-        </div>
-    </div>
-    <div class="footer-box">
-        <h3>Quick Links</h3>
-        <a href="#about">About</a>
-        <a href="#category">Category</a>
-        <a href="#products">Products</a>
-    </div>
-    <div class="footer-box">
-        <h3>Contact</h3>
-        <a href="mailto:buchi-n@msn.com">Email</a>
-        <a href="tel:+447405508528">Phone</a>
-        <a href="https://www.google.com/maps/place/T+H+Baker/@52.4486258,-2.0539017,17z" target="_blank">Location</a>
+<section class="footer">
+  <div class="box-container">
+     
+      <div class="box">
+          <h3><i class="fas fa-mug-hot"></i> FreshBITE</h3>
+          <a href="#" class="links"><i class="fa-brands fa-facebook"></i>Facebook</a>
+          <a href="#" class="links"><i class="fa-brands fa-instagram"></i>Instagram</a>
+          <a href="#" class="links"><i class="fa-brands fa-twitter"></i>Twitter</a>
+          <a href="#" class="links"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+      </div>
+      <div class="box">
+          <h3>extra links</h3>
+          <a href="#">coffee</a>
+          <a href="#">drinks</a>
+          <a href="#">snacks</a>
+          <a href="#">our team</a>
+          <a href="#">terms of use</a>
       </div>
 
- </section>
+      <div class="box">
+          <h3>useful links</h3>
+          <a href="#">FAQs</a>
+          <a href="#">menu</a>
+          <a href="#">our story</a>
+          <a href="#">location</a>
+          <a href="#">contact us</a>
+      </div>
+      <div class="box">
+          <h3>newsletter</h3>
+          <p>Subscribe to our newsletter to get the latest news and offers</p>
+         <form action="">
+              <input type="email" placeholder="enter your email">
+              <input type="submit" value="subscribe" class="btn">
+         </form>
+         <img src="assets/imgs/payment.png" class="payment" alt="payment options">
+      </div>
+  </div>
+ <!--Copyright-->
+<div class="credit"><p class="copyright">&#169; 2024 FreshBITE Café. </p> Designed by <span>otawiz&geoce</span> | All rights reserved</div>
+
+</section>
 
 <!-- footer section ends -->
- <!--Copyright-->
- <p class="copyright">&#169; 2024 FreshBITE. All rights reserved</p>
- <a href="#" class="arrow-up"><i class='bx bx-up-arrow-alt'></i></a>
-<!-- Scrollreveal scrpt link -->
-<script src="https://unpkg.com/scrollreveal"></script>
+
+
 <!-- custom js file link -->
-<script src="script.js"></script>    
+<script src="../assets/script/script.js"></script>     
 </body>
 </html>
