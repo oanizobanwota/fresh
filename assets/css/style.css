@@ -380,10 +380,7 @@ background: #fff;
 /* end categories css */
 
 /* contact css */
-.container {
-  max-width: 1120px;
-  margin-inline: 1.5rem;
-}
+
 
 .grid {
   display: grid;
@@ -442,8 +439,53 @@ background: #fff;
   top: -5px;
 }
 
-.main {
-  overflow: hidden; /* For animation ScrollReveal */
+/* coffee bas */
+.base {
+  height: 95vh;
+}
+.base .box-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  
+}
+.base .box-container .image {
+ flex: 1 1 40rem;
+}
+.base .box-container .image img {
+  width: 100%;
+}
+.base .box-container .container {
+  flex: 1 1 40rem;
+  display: flex;
+  flex-direction: column;
+}
+.base .box-container .container .item .content {
+  margin-left: 2rem;
+}
+.base .box-container .container .item .content h3 {
+  font-size: 2.2rem;
+  color: var(--color);
+}
+.base .box-container .container .item .content p {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+.base .container .icon img {
+  width: 10%;
+}
+
+.about-content .content-wrapper .image img {
+  width: 60%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.content-wrapper {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the container */
+  gap: .2rem; /* Space between the text and the image */
 }
 
 /*=============== BUTTON ===============*/
