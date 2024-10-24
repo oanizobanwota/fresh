@@ -284,7 +284,12 @@ section {
     width: 45rem; /* Maintain the aspect ratio of the image */
     border-radius: 1rem; /* Rounded corners for the image */
     object-fit: cover; /* Cover the entire container with the image */
-}
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+  }
+  
+  .image-content img:hover {
+      transform: translateX(-20px); /* Translate the image 20px to the left on hover */
+  }
 /* end about css */
 
 /* products css */
