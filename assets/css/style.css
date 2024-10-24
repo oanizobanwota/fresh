@@ -667,3 +667,51 @@ background: none;
 }
 
 /* end footer css */
+
+/* media queries */
+@media (max-width:991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 3rem;
+  }
+}
+@media (max-width:768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 3orem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    border-radius: 0.5rem;
+  }
+  .header .navbar.active {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+  .header .navbar a {
+    display: block;
+   margin: 2rem 2.5rem;
+   font-size: 2rem;
+  }
+  .home {
+    background-position: left;
+    justify-content: center;
+  }
+  .home .content h3{
+    font-size: 4rem;
+  }
+}
+@media (max-width:450px) {
+  html {
+    font-size: 50%;
+  }
+}
