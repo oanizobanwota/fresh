@@ -89,22 +89,38 @@
         <div class="box">
             <h3>newsletter</h3>
             <p>Subscribe to our newsletter to get the latest news and offers</p>
-           <form action="">
-                <input type="email" placeholder="enter your email">
+            <form action="" id="subscribe-form">
+                <input type="email" id="email" name="email" placeholder="enter your email" required>
                 <input type="submit" value="subscribe" class="btn">
+                <p id="response-message"></p>
            </form>
+           
            <img src="assets/imgs/payment.png" class="payment" alt="payment options">
         </div>
     </div>
    <!--Copyright-->
-<div class="credit"><p class="copyright">&#169; 2024 FreshBITE Café. </p> Designed by <span>otawiz&geoce</span> | All rights reserved</div>
-
- </section>
-
-<!-- footer section ends -->
-
-
-<!-- custom js file link -->
-<script src="assets/script/script.js"></script>    
+  <div class="credit"><p class="copyright">&#169; 2024 FreshBITE Café. </p> Designed by <span>otawiz&geoce</span> | All rights reserved</div>
+  
+  </section>
+  
+  <!-- footer section ends -->
+  
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "JQVf0VV33G1gYVPgF",
+      });
+   })();
+</script>
+  
+  
+   <!-- Include your custom script -->
+   <script src="assets/script/subscribe.js" defer></script>
+   
+    <!-- custom js file link -->
+  <script src="assets/script/script.js"></script>  
 </body>
 </html>
