@@ -41,7 +41,7 @@ Here are my social media handle to easily reach me.
 - [X](https://x.com/freshbite_)
 - [Facebook](https://www.facebook.com/freshbitecafee)
 - [Linkedin](https://www.linkedin.com/company/freshbitecafe)
-- [Instagram](https://www.instagram.com/anizobanwota)
+- [Instagram](https://www.instagram.com/freshbitecafee)
 
 ## Acknowledgements
 
@@ -49,7 +49,7 @@ My acknowlegement and appreciations to,
 
 - [Codepen](https://codepen.io/)
 - [Google](https://www.google.com/)
-- [Formspree](https://formspree.io/)
+- [EmailJs](https://www.emailjs.com/)
 
 for inspiration, materials and tutorials i got from searching through their websites.
 
