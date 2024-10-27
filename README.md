@@ -13,7 +13,7 @@ The website of FreshBITE cafe have information of the cafe on internet displayin
 
 ## Overview
 
-![Link to Website](https://oanizobanwota.github.io/fresh)
+- [Link to Website](https://oanizobanwota.github.io/fresh)
 
 
 ### Built With
