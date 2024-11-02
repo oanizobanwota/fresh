@@ -102,10 +102,30 @@ section {
 }
 .header .navbar a.active {
   color: var(--color);
+  font-weight: bold;
 }
 .header .navbar a:hover {
   color: var(--color);
 }
+.heading .navbar {
+  margin-bottom: 2rem;
+}
+.heading .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: #222;
+}
+.heading .navbar a.active {
+  color: var(--color);
+}
+.heading .navbar a:hover {
+  color: var(--color);
+}
+.heading .navbar a.active {
+  color: var(--color);
+  font-weight: bold;
+}
+
 .header .icons div {
   height: 4.5rem;
   width: 4.5rem;
@@ -199,6 +219,7 @@ section {
     height: 100%;
     z-index: 1; /* Ensure the image is behind the content */
     overflow: hidden;
+    animation: dissolve-in 2s forwards; /* Apply the dissolve-in animation */
 }
 
 .home .home-image img {
@@ -206,6 +227,11 @@ section {
     height: 100%;
     object-fit: contain; /* Ensure the image covers the entire container */
     opacity: 0.5; /* Optional: Add opacity to the image for better text visibility */
+}
+@keyframes dissolve-in {
+  to {
+      opacity: 1; /* End with the image fully opaque */
+  }
 }
 .home .content h3 {
   font-size: 4rem;
@@ -450,6 +476,7 @@ section {
 }
 .base .box-container .image img {
   width: 100%;
+  height: 90vh
 }
 .base .box-container .container {
   flex: 1 1 40rem;
@@ -469,9 +496,12 @@ section {
   line-height: 1.6;
 }
 .base .container .icon img {
-  width: 10%;
+  width: 20%;
 }
-
+.base {
+  padding-bottom: 10rem;
+  margin-bottom: 10rem;
+}
 .about-content .content-wrapper .image img {
   width: 60%;
   object-fit: cover;
