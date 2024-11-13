@@ -465,7 +465,7 @@ section {
   height: 100vh;
 }
 .cooler {
-  padding: 2rem;
+  padding: 2rem 2rem 0;
   background: var(--white-color);
   border-radius: 1.5rem;
 }
@@ -736,6 +736,11 @@ background: none;
     padding-bottom: 25rem;
     padding-right: 1rem;
 }
+}
+@media (max-width:739px) {
+  .coolers {
+  
+  }
 }
 
 @media (max-width:450px) {
