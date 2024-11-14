@@ -748,12 +748,6 @@ background: none;
     padding-right: 1rem;
 }
 }
-@media (max-width:739px) {
-  .coolers {
-  
-  }
-}
-
 @media (max-width:450px) {
   html {
     font-size: 50%;
