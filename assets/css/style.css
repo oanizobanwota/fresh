@@ -462,62 +462,73 @@ section {
 
 /* coffee bas */
 .base {
-  height: 100vh;
+  height: 90vh;
+  padding-bottom: 10rem;
+  padding-top: 1rem;
 }
 .cooler {
-  padding: 2rem 2rem 0;
   background: var(--white-color);
   border-radius: 1.5rem;
+  padding-bottom: 5rem;
+  width: 95%;
+  margin-left: 4rem;
+  margin-top: 5rem;
 }
 .base .box-container {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4rem;
-  
+  flex-direction: column; /* Arrange children in a column (2 rows) */
+  align-items: center; /* Center align items horizontally */
+  gap: 1rem; /* Add space between the rows */
 }
-.base .box-container .image {
- flex: 1 1 30rem;
+
+.base .box-container .image,
+.base .box-container .container {
+  width: 100%; /* Ensure both rows take up the full width */
 }
+
 .base .box-container .image img {
-  width: 80%;
-  border-radius: 1.5rem;
-  transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
-}
-.base .box-container .image img:hover {
-  transform: translateX(20px); /* Move the image 20px to the right on hover */
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: 10rem; /* Maintain the aspect ratio of the image */
+  object-fit: cover; /* Cover the entire container with the image */
+  border-radius: 1.5rem; /* Rounded corners for the image */
 }
 .base .box-container .container {
-  flex: 1 1 30rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+  gap: 1rem; /* Add space between the columns */
 }
-.base .box-container .container .item .content {
-  margin-left: 2rem;
+.base .box-container .container .item {
+  display: grid; /* Display the icon and content side by side */
+  grid-template-columns: 20% 1fr; /* Create a 10% width column for the icon and a 90% width column for the content */
+  gap: 1rem; /* Space between the icon and content */
+  padding: 2rem; /* Add padding around the item */
+  padding-left: 5rem;
+
+}
+.base .box-container .container .icon img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for transform and box-shadow properties */
+}
+.base .box-container .container .item .content h3,
+.base .box-container .container .item .content p {
+  margin: 0; /* Remove default margin */
 }
 .base .box-container .container .item .content h3 {
   font-size: 2.2rem;
   color: var(--color);
 }
 .base .box-container .container .item .content p {
-  margin: 0.5rem 0;
   font-size: 1.5rem;
   line-height: 1.6;
 }
 .base .container .icon img {
-  width: 15%;
+  width: 100%;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for transform and box-shadow properties */
 }
 .base .container .icon img:hover {
   transform: scale(1.1); /* Slightly scale up the image */
 }
-.base .box-container {
-  margin-left: 10rem;
-  padding-left: 0;
-}
-.base {
-  padding-bottom: 10rem;
-  margin-bottom: 10rem;
+.base .container{
+  padding-top: 2rem;
 }
 .about-content .content-wrapper .image img {
   width: 60%;
